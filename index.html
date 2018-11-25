@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- header -->
+        <div class="row">
+            <div class="col-md-4">
+                <header id="head">Crystal Collector!</header>
+            </div>
+        </div>
+        <!-- text of the rules -->
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <div class="jumbotron jumbotron-fluid ">
+                    <div class="container">
+                        <h1 class="display-4">Rules</h1>
+                        <p class="lead"> You will be given a random number at the start of the game.
+                            </li>
+                            <li>
+                                There are four crystals below. By clicking a crystal you will add a specific amount of
+                                points to your total score.
+                            </li>
+                            <li>
+                                You win by matching your score with the Magic Number. You loose if its not exact.
+                            </li>
+                            <li>
+                                The value can only be found when clicked on.
+                            </li>
+                            <li>
+                                Each time the game starts the crystal values change
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!-- images of crystals -->
+        <div class="row">
+            <div class="col-md-3">
+                <img src="./assets/images/thanoshand.png" usemap="#image-map">
+
+                <map name="image-map">
+
+                    <area id="orange" coords="15,219,41" shape="circle">
+                    <area id="red" coords="90,208,42" shape="circle">
+                    <area id="blue" coords="230,195,50" shape="circle">
+                    <area id="purple" coords="350,196,57" shape="circle">
+
+                </map>
+            </div>
+            <div class="col-md-3 ml-3">
+                <div class="card" style="width: 18rem;">
+                    <!-- row inside a card -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush ml-3">
+                                <p class=>Wins:
+                                    <span id="wins">0</span>
+                                </p>
+                                <p>Losses:
+                                    <span id= "losses">0</span>
+                                </p>
+                            </ul>
+                        </div>
+                        <!-- col inside a card -->
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush ">
+                                <p class=>Thanos's Number:
+                                    <span id="thanos">0</span>
+                                </p>
+                                <p>Your Number:
+                                    <span id= "player">0</span>
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                   
+                  </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
